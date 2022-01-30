@@ -42,7 +42,8 @@ val typography = Typography(
         ),
     button = TextStyle(
         fontSize = 14.sp,
-        letterSpacing = 1.15.sp
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "c2sc, smcp"
         ),
     caption = TextStyle(
         fontSize = 12.sp,
