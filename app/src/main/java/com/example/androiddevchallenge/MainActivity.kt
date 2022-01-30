@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun MyApp() {
     Surface(color = lightColors().background) {
-        WelcomeScreen()
     }
 }
 

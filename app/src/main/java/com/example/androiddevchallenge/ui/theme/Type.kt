@@ -30,7 +30,8 @@ val typography = Typography(
     ),
     h2 = TextStyle(
         fontSize = 15.sp,
-        letterSpacing = 1.15.sp
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "c2sc, smcp"
     ),
     h3 = TextStyle(
         fontSize = 18.sp,
@@ -47,6 +48,7 @@ val typography = Typography(
         ),
     caption = TextStyle(
         fontSize = 12.sp,
-        letterSpacing = 1.15.sp
-        )
+        letterSpacing = 1.15.sp,
+        fontFeatureSettings = "c2sc, smcp"
+    )
 )

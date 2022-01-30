@@ -19,7 +19,8 @@ fun WelcomeScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colors.background),
+            .background(colors.background)
+            .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
@@ -33,13 +34,12 @@ fun WelcomeScreen() {
             modifier = Modifier
                 .height(72.dp)
                 .fillMaxWidth()
-                .padding(horizontal = 16.dp)
                 .padding(bottom = 8.dp),
             onClick = {},
             shape = shapes.medium,
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = colors.primary,
-                contentColor = white
+                contentColor = colors.onPrimary
             )
         ) {
             Text(
@@ -50,13 +50,12 @@ fun WelcomeScreen() {
         Button(
             modifier = Modifier
                 .height(72.dp)
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp),
+                .fillMaxWidth(),
             onClick = {},
             shape = shapes.medium,
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = colors.secondary,
-                contentColor = white
+                contentColor = colors.onSecondary
             )
         ) {
             Text(
