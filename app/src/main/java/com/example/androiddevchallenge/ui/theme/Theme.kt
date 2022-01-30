@@ -17,9 +17,11 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.unit.dp
 
 private val DarkColorPalette = darkColors(
     primary = white,
@@ -42,7 +44,7 @@ private val LightColorPalette = lightColors(
     onBackground = taupe800,
     onSurface = gray800,
 
-)
+    )
 
 @Composable
 fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
@@ -56,6 +58,9 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
         colors = colors,
         typography = typography,
         shapes = shapes,
-        content = content
+        content = content,
     )
+
+    Surface(elevation = 8.dp) {
+    }
 }
