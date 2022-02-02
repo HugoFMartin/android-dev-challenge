@@ -12,12 +12,15 @@ import androidx.compose.material.icons.rounded.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.androiddevchallenge.model.ItemModel
 import com.example.androiddevchallenge.ui.theme.MyTheme
 import com.example.androiddevchallenge.ui.theme.typography
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(
+    navController: NavController
+) {
 
     val favoriteCollectionList = arrayOf(
         ItemModel(image = R.drawable.pexels_josh_sorenson_1054391, title = "Short mantras"),

@@ -10,11 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.androiddevchallenge.ui.theme.shapes
 import com.example.androiddevchallenge.ui.theme.typography
 
 @Composable
-fun WelcomeScreen() {
+fun WelcomeScreen(
+    navController: NavController
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,9 +34,10 @@ fun WelcomeScreen() {
         )
         Button(
             modifier = Modifier
+                .padding(bottom = 8.dp)
                 .height(72.dp)
                 .fillMaxWidth()
-                .padding(bottom = 8.dp),
+                ,
             onClick = {},
             shape = shapes.medium,
             colors = ButtonDefaults.buttonColors(
@@ -50,7 +54,9 @@ fun WelcomeScreen() {
             modifier = Modifier
                 .height(72.dp)
                 .fillMaxWidth(),
-            onClick = {},
+            onClick = {
+                navController.navigate("login")
+            },
             shape = shapes.medium,
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = colors.secondary,

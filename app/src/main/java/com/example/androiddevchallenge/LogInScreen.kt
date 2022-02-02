@@ -10,10 +10,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextDecoration.Companion.Underline
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.androiddevchallenge.ui.theme.typography
 
 @Composable
-fun LoginScreen() {
+fun LoginScreen(
+    navController: NavController
+) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,9 +34,9 @@ fun LoginScreen() {
         )
         TextField(
             modifier = Modifier
-                .fillMaxWidth()
+                .padding(bottom = 8.dp)
                 .height(56.dp)
-                .padding(bottom = 8.dp),
+                .fillMaxWidth(),
             value = "Email adress",
             onValueChange = {},
             textStyle = typography.body1,
@@ -46,9 +49,9 @@ fun LoginScreen() {
         )
         TextField(
             modifier = Modifier
-                .fillMaxWidth()
+                .padding(bottom = 8.dp)
                 .height(56.dp)
-                .padding(bottom = 8.dp),
+                .fillMaxWidth(),
             value = "Password",
             onValueChange = {},
             textStyle = typography.body1,
@@ -63,7 +66,9 @@ fun LoginScreen() {
             modifier = Modifier
                 .height(72.dp)
                 .fillMaxWidth(),
-            onClick = {},
+            onClick = {
+                navController.navigate("home")
+            },
             shape = shapes.medium,
             colors = ButtonDefaults.buttonColors(
                 backgroundColor = colors.primary,
