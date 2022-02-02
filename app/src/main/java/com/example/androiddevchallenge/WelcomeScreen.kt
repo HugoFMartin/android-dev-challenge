@@ -12,7 +12,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.shapes
 import com.example.androiddevchallenge.ui.theme.typography
-import com.example.androiddevchallenge.ui.theme.white
 
 @Composable
 fun WelcomeScreen() {

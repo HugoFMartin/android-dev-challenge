@@ -20,7 +20,7 @@ import com.example.androiddevchallenge.ui.theme.typography
 
 @Composable
 fun ImageItem(
-    item : ItemModel
+    item: ItemModel
 ) {
     Column(
         verticalArrangement = Arrangement.Center,

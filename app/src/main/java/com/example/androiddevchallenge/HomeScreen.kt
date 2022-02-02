@@ -50,7 +50,7 @@ fun HomeScreen() {
         ItemModel(image = R.drawable.pexels_nathan_cowley_897817, title = "High stress")
     )
 
-    MyTheme() {
+    MyTheme {
         Scaffold(
             bottomBar = {
                 BottomBar()
