@@ -34,7 +34,7 @@ val typography = Typography(
         fontFeatureSettings = "c2sc, smcp"
     ),
     h3 = TextStyle(
-        fontSize = 18.sp,
+        fontSize = 14.sp,
         letterSpacing = 0.sp
     ),
     body1 = TextStyle(

@@ -60,7 +60,4 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
         shapes = shapes,
         content = content,
     )
-
-    Surface(elevation = 8.dp) {
-    }
 }
