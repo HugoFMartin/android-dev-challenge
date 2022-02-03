@@ -17,36 +17,61 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val fontKulimpark = FontFamily(
+    Font(R.font.kulimpark_light,weight = FontWeight.Light),
+    Font(R.font.kulimpark_regular,weight = FontWeight.Normal),
+    )
+
+val fontLato = FontFamily(
+    Font(R.font.lato_regular,weight = FontWeight.Normal),
+    Font(R.font.lato_bold,weight = FontWeight.Bold),
+    )
 
 // Set of Material typography styles to start with
 val typography = Typography(
 
+
     h1 = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Light,
         fontSize = 28.sp,
         letterSpacing = 1.15.sp
     ),
     h2 = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Normal,
         fontSize = 15.sp,
         letterSpacing = 1.15.sp,
         fontFeatureSettings = "c2sc, smcp"
     ),
     h3 = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         letterSpacing = 0.sp
     ),
     body1 = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
         letterSpacing = 0.sp
         ),
     button = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         letterSpacing = 1.15.sp,
         fontFeatureSettings = "c2sc, smcp"
         ),
     caption = TextStyle(
+        fontFamily = fontKulimpark,
+        fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         letterSpacing = 1.15.sp,
         fontFeatureSettings = "c2sc, smcp"
