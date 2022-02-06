@@ -55,8 +55,8 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
     }
 
     val systemUiController = rememberSystemUiController()
-    systemUiController.setSystemBarsColor(
-        color = Color.Transparent
+    systemUiController.setStatusBarColor(
+        color = Color.White
     )
 
     MaterialTheme(
