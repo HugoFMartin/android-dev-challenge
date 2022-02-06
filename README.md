@@ -5,7 +5,9 @@ I just make the [Android Dev Challenges](https://github.com/android/android-dev-
 Just to improve a bit my integration skill.
 
 ## Screenshots
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">&emsp;<img src="/results/screenshot_3.png" width="260">
+<img src="/results/screenshot_light_1.png" width="260">&emsp;<img src="/results/screenshot_light_2.png" width="260">&emsp;<img src="/results/screenshot_light_3.png" width="260"></br>
+<img src="/results/screenshot_dark_1.png" width="260">&emsp;<img src="/results/screenshot_dark_2.png" width="260">&emsp;<img src="/results/screenshot_dark_3.png" width="260">
+
 
 ## License
 ```

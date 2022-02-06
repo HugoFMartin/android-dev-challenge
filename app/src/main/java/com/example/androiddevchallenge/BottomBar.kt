@@ -12,19 +12,22 @@ import androidx.compose.material.icons.filled.Spa
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.ui.theme.typography
 
+@Preview
 @Composable
 fun BottomBar() {
     Surface(
         modifier = Modifier
             .fillMaxWidth()
-            .height(56.dp)
-            .background(colors.background),
-        elevation = 8.dp
+            .height(56.dp),
+        elevation = 45.dp
     ) {
         Row(
+            modifier = Modifier
+                .background(colors.background),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceAround
         ) {

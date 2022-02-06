@@ -1,6 +1,8 @@
 package com.example.androiddevchallenge
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.MaterialTheme.colors
@@ -8,6 +10,8 @@ import androidx.compose.material.MaterialTheme.shapes
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextDecoration.Companion.Underline
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -17,10 +21,17 @@ import com.example.androiddevchallenge.ui.theme.typography
 fun LoginScreen(
     navController: NavController
 ) {
+    Image(
+        painter = painterResource(if (isSystemInDarkTheme()) R.drawable.ic_dark_login else R.drawable.ic_light_login),
+        contentDescription = null,
+        modifier = Modifier
+            .fillMaxSize()
+            .background(colors.background),
+        contentScale = ContentScale.Crop
+    )
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colors.background)
             .padding(horizontal = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {

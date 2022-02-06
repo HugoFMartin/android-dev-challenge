@@ -1,6 +1,8 @@
 package com.example.androiddevchallenge
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
@@ -9,6 +11,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.androiddevchallenge.ui.theme.shapes
@@ -18,19 +22,25 @@ import com.example.androiddevchallenge.ui.theme.typography
 fun WelcomeScreen(
     navController: NavController
 ) {
+    Image(
+        painter = painterResource(if (isSystemInDarkTheme()) R.drawable.ic_dark_welcome else R.drawable.ic_light_welcome),
+        contentDescription = null,
+        modifier = Modifier
+            .fillMaxSize()
+            .background(colors.background),
+        contentScale = ContentScale.Crop
+    )
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colors.background)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(
+        Image(
             modifier = Modifier.padding(bottom = 32.dp),
-            text = "MY SOOTHE",
-            style = typography.h1,
-            color = colors.primary
+            painter = painterResource(if (isSystemInDarkTheme()) R.drawable.ic_dark_logo else R.drawable.ic_light_logo),
+            contentDescription = "Welcome logo"
         )
         Button(
             modifier = Modifier

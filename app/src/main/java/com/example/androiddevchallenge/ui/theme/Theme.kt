@@ -43,7 +43,6 @@ private val LightColorPalette = lightColors(
     onSecondary = white,
     onBackground = taupe800,
     onSurface = gray800,
-
     )
 
 @Composable
@@ -56,7 +55,12 @@ fun MyTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() (
 
     val systemUiController = rememberSystemUiController()
     systemUiController.setStatusBarColor(
-        color = Color.White
+        color =
+        if (darkTheme) {
+            Color.Black
+        } else {
+            Color.White
+        }
     )
 
     MaterialTheme(
