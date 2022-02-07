@@ -51,19 +51,19 @@ val typography = Typography(
         fontFeatureSettings = "c2sc, smcp"
     ),
     h3 = TextStyle(
-        fontFamily = fontKulimpark,
+        fontFamily = fontLato,
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         letterSpacing = 0.sp
     ),
     body1 = TextStyle(
-        fontFamily = fontKulimpark,
+        fontFamily = fontLato,
         fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
         letterSpacing = 0.sp
         ),
     button = TextStyle(
-        fontFamily = fontKulimpark,
+        fontFamily = fontLato,
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         letterSpacing = 1.15.sp,
