@@ -108,7 +108,7 @@ fun HomeScreen(
                 Text(
                     modifier = Modifier
                         .paddingFromBaseline(top = 40.dp),
-                    text = "favorite collections",
+                    text = "FAVORITE COLLECTIONS",
                     style = typography.h2,
                     color = colors.onBackground
                 )
@@ -135,7 +135,7 @@ fun HomeScreen(
                 Text(
                     modifier = Modifier
                         .paddingFromBaseline(top = 48.dp, bottom = 8.dp),
-                    text = "align your body",
+                    text = "ALIGN YOUR BODY",
                     style = typography.h2,
                     color = colors.onBackground
                 )
@@ -152,7 +152,7 @@ fun HomeScreen(
                 Text(
                     modifier = Modifier
                         .paddingFromBaseline(top = 48.dp, bottom = 8.dp),
-                    text = "align your mind",
+                    text = "ALIGN YOUR MIND",
                     style = typography.h2,
                     color = colors.onBackground
                 )

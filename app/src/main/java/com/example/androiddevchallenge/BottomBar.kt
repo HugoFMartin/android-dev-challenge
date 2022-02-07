@@ -43,7 +43,7 @@ fun BottomBar() {
                     tint = colors.onBackground
                 )
                 Text(
-                    text = "Home",
+                    text = "HOME",
                     style = typography.caption
                 )
             }
@@ -59,7 +59,7 @@ fun BottomBar() {
                     tint = colors.onBackground
                 )
                 Text(
-                    text = "Profile",
+                    text = "PROFILE",
                     style = typography.caption
                 )
             }

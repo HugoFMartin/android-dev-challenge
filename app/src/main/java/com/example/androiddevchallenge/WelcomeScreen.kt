@@ -56,7 +56,7 @@ fun WelcomeScreen(
             )
         ) {
             Text(
-                text = "Sign up",
+                text = "SIGN UP",
                 style = typography.button
             )
         }
@@ -74,7 +74,7 @@ fun WelcomeScreen(
             )
         ) {
             Text(
-                text = "Login",
+                text = "LOGIN",
                 style = typography.button
             )
         }

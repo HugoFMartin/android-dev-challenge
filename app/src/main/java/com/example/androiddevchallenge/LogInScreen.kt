@@ -87,7 +87,7 @@ fun LoginScreen(
             )
         ) {
             Text(
-                text = "log in",
+                text = "LOGIN",
                 style = typography.button
             )
         }

@@ -48,7 +48,6 @@ val typography = Typography(
         fontWeight = FontWeight.Normal,
         fontSize = 15.sp,
         letterSpacing = 1.15.sp,
-        fontFeatureSettings = "c2sc, smcp"
     ),
     h3 = TextStyle(
         fontFamily = fontLato,
@@ -67,13 +66,11 @@ val typography = Typography(
         fontWeight = FontWeight.Bold,
         fontSize = 14.sp,
         letterSpacing = 1.15.sp,
-        fontFeatureSettings = "c2sc, smcp"
         ),
     caption = TextStyle(
         fontFamily = fontKulimpark,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         letterSpacing = 1.15.sp,
-        fontFeatureSettings = "c2sc, smcp"
     )
 )
